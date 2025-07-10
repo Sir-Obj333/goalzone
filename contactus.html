@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | GoalZone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <img src="images/goalzone.jpg" alt="GoalZone Logo" class="logo"/>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="contactus.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>We're here to help. Reach out with any questions, ideas or media inquiries!</p>
+
+    <div class="contact-section">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Email:</strong> support@goalzone.com</p>
+        <p><strong>Phone:</strong> +267 7123 4567</p>
+        <p><strong>Location:</strong> Gaborone, Botswana</p>
+      </div>
+
+      <form id="contactForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="contactemail">Email:</label>
+        <input type="email" id="contactemail" name="contactemail" required>
+
+        <label for="contactmessage">Message:</label>
+        <textarea id="contactmessage" name="contactmessage" rows="5" required></textarea>
+
+        <button type="submit" id="contactSubmitBtn">Send Message</button>
+      </form>
+    </div>
+
+    <div id="contactResponse" style="margin-top: 20px; font-weight: bold;"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 GoalZone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="contactus.js"></script>
+</body>
+</html>
